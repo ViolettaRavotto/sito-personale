@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Violetta Ravotto Full Stack Development Student</title>
+    <meta
+      name="description"
+      content="sito web di Violetta Ravotto Full Stack Development Student presso Start2Impact."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Link a Fontawesome-->
+    <link rel="stylesheet" href="img/fontawesome/css/all.min.css" />
+    <!--Link Libreria Esterna W3C-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+  <body>
+   <nav>
+      <div id="switch-mode" class="switch-mode">
+        <button onclick="myFunction()">
+          <img src="img/dark_mode.svg" alt="" />
+        </button>
+        <button onclick="myFunction()">
+          <img src="img/light_mode.svg" alt="" />
+        </button>
+      </div>
+      <div class="w3-bar w3-deep-purple">
+        <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-orange"
+          >Home</a
+        >
+        <a href="#portfolio" class="w3-bar-item w3-button w3-mobile w3-hover-orange">Portfolio</a>
+        <a href="#su-di-me" class="w3-bar-item w3-button w3-mobile w3-hover-orange">Su di me</a>
+        <a href="#contattami" class="w3-bar-item w3-button w3-mobile w3-hover-orange">Contattami</a>
+        <div class="w3-dropdown-hover w3-mobile w3-hover-orange">
+          <button class="w3-button w3-hover-orange">
+            <i id="globe" class="fa fa-globe" aria-hidden="true"></i
+              > <i id="globe" class="fa fa-caret-down"></i>
+          </button>
+          <div class="w3-dropdown-content w3-bar-block w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-orange">Castellano</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-orange">English</a>
+          </div>
+        </div>
+      </div>
+    </nav> 
+    <header id="home">
+      <div class="header-text-area">
+        <div class="header-text">
+          <h1 class="w3-monospace">Ciao, sono Violetta</h1>
+          <h2 class="w3-monospace">Front End Development Student</h2>
+          <h3 class="w3-monospace">A Start2Impact</h3>
+          <a href="#portfolio"><button class="w3-btn w3-round w3-orange w3-hover-deep-purple"> Scopri di più</button></a>
+        </div>
+        <div class="header-photo w3-hide-small w3-hide-medium">
+          <img
+            src="img/foto-heading.jpg"
+            class="w3-opacity w3-hover-opacity-off"
+            style="width: 100%"
+            alt="foto che ritrae Violetta"
+          />
+        </div>
+      </div>
+    </header>
+    <div class="content">
+    <section id="portfolio" class="w3-container w3-center w3-margin">
+      <div class="background" style="background-image: url('img/backround1.jpg');">
+      <h2>Il mio obiettivo? <br> Aiutarti a raggiungere i tuoi grazie a un sito:</h2>
+      <div class="myweb-icons w3-row-padding w3-margin">
+          <div class="w3-col l4 m3  w3-center w3-padding-24">
+      <i class="fa fa-bolt fa-2x" aria-hidden="true" title="simbolo della velocità"></i>
+      <h4>VELOCE</h4>
+      <p class="w3-large">Un caricamento veloce con qualunque tipo di connessione.</p>
+    </div>
+    <div class="w3-col l4 m3  w3-center w3-padding-24">
+      <i class="fa fa-mobile fa-2x" aria-hidden="true" title="simbolo di vari device"></i>
+      <h4>RESPONSIVE</h4>
+      <p class="w3-large">Siti che ai adattano a schermi di ogni dimensione</p>
+    </div>
+    <div class="w3-col l4 m3  w3-center w3-padding-24">
+      <i class="fa fa-user-circle fa-2x" aria-hidden="true" title="simbolo di user"></i>
+      <h4>USABILE</h4>
+      <p class="w3-large">Un design semplice e piacevole da usare.</p>
+    </div>
+    <h2>Tutte queste pratiche aiutano a migliorare i tuoi risultati nei 
+      <a href="https://www.simpliza.it/blog/fattori-seo-google-lista-completa-ranking/#Velocita_di_caricamento_pagina"  aria-label="collegamento a fattori-seo-google-lista-completa-ranking"
+      target="_blank"><em>motori di ricerca!</em> </a> </h2>
+    </div> <!-- fine immagine background-->
+    <h2>La mia aspirazione?<br> Contribuire a costruire un web</h2>
+    <div class="w3-col l4 m3 w3-center w3-padding-24">
+      <i class="fa fa-leaf fa-2x" aria-hidden="true" title="simbolo dell'ecologia"></i>
+      <h4>ECOLOGICO</h4>
+      <p class="w3-large">Una coscienza ecologica anche nelle scelte del mondo digitale.</p>
+    </div>
+    <div class="w3-col l4 m3  w3-center w3-padding-24">
+      <i class="fa fa-lock fa-2x" aria-hidden="true" title="simbolo di un lucchetto"></i>
+      <h4>SICURO</h4>
+      <p class="w3-large">Privacy e controllo sull'uso dei dati personali.</p>
+    </div>
+    <div class="w3-col l4 m3  w3-center w3-padding-24">
+      <i class="fa fa-universal-access fa-2x" aria-hidden="true" title="simbolo dell'essere umano"></i>
+      <h4>ACCESSIBILE</h4>
+      <p class="w3-large">Una tecnologia che aiuta a superare le barriere, fisiche e sociali.</p>
+    </div>
+    <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
+    <h2>Per questo ho sottoscritto il
+      <a href="https://contractfortheweb.org/"  aria-label="collegamento al sito di contract for the web"
+      target="_blank"><em>piano globale per il web.</em> </a> </h2>
+    </div>
+<section id="gallery" class="w3-container w3-center w3-margin">
+  <h1>I miei lavori</h1>
+
+</section>
+
+
+
+
+      <div class="socials">
+        <a
+          href="https://github.com/"
+          aria-label="vai al profilo su GitHub"
+          target="_blank"
+          ><i class="fab fa-github-square fa-2x" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/violetta-ravotto-2271ab125/"
+          aria-label="vai al profilo su Linkedin"
+          target="_blank"
+          ><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCN2ljNfSrNn44Z_sMK54fXg"
+          aria-label="vai al canale Youtube"
+          target="_blank"
+          ><i class="fab fa-youtube-square fa-2x" aria-hidden="true"></i
+        ></a>
+      </div>
+    </section>
+    <section id="Portfolio"></section> 
+    <section></section>
+    <section></section>
+    <footer></footer>
+  </div>
+    <script>
+      // Light Mode
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("light-mode");
+      }
+    </script>
+  </body>
+</html>

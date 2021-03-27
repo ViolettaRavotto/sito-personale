@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lucida Console", sans-serif;
+  text-decoration: none;
+}
+
+.content {
+  max-width: 900px;
+  margin: auto;
+}
+
+i {
+  color: blueviolet;
+}
+
+#globe {
+  color: white;
+}
+
+#globe:hover {
+  color: black;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+#switch-mode {
+  margin: 20px;
+  display: inline;
+}
+
+#switch-mode img {
+  width: 30px;
+  cursor: pointer;
+}
+
+header {
+  height: 100vh;
+}
+
+.header-text-area {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-photo {
+  width: 60%;
+  max-height: 50hv;
+  padding-left: 50px;
+}
+
+img {
+  border-radius: 30px;
+  max-height: fit-content;
+}
+
+.header-text {
+  margin: 20px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  border-radius: 30px;
+}
+
+.background {
+  min-height: 800px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+}
+
+
+#gallery {
+  min-height: 400px;
+  background-color: blueviolet;
+
+}
+
+.socials {
+  background-color: blueviolet;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+footer {
+  height: 500px;
+}
