@@ -1,151 +1,399 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Violetta Ravotto Full Stack Development Student</title>
-    <meta
-      name="description"
-      content="sito web di Violetta Ravotto Full Stack Development Student presso Start2Impact."
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <!--Link a Fontawesome-->
-    <link rel="stylesheet" href="img/fontawesome/css/all.min.css" />
-    <!--Link Libreria Esterna W3C-->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  </head>
-  <body>
-   <nav>
-      <div id="switch-mode" class="switch-mode">
-        <button onclick="myFunction()">
-          <img src="img/dark_mode.svg" alt="" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Violetta Ravotto Web Developer</title>
+  <meta name="description"
+    content="Realizzo siti web per ogni esigenza, costruiti per raggiungere i tuoi obiettivi, con un tocco femminile. Lavoro da remoto. Visita il mio sito per avere una consulenza gratuita!" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav>
+    <div class="w3-bar w3-large w3-padding">
+      <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-orange">Home</a>
+      <a href="#mywork" class="w3-bar-item w3-button w3-mobile w3-hover-orange">Il mio lavoro</a>
+      <a href="#about" class="w3-bar-item w3-button w3-mobile w3-hover-orange">Su di me</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-mobile w3-hover-orange">Contattami</a>
+      <div class="w3-dropdown-hover w3-mobile w3-hover-orange">
+        <button class="w3-button w3-hover-orange">
+          <i id="globe" class="fa fa-globe" aria-hidden="true"></i> <i id="globe" class="fa fa-caret-down"></i>
         </button>
-        <button onclick="myFunction()">
-          <img src="img/light_mode.svg" alt="" />
-        </button>
+        <div class="w3-dropdown-content w3-bar-block w3-light-grey">
+          <a href="misitio.html" class="w3-bar-item w3-button w3-mobile w3-hover-orange">Castellano</a>
+          <a href="mysite.html" class="w3-bar-item w3-button w3-mobile w3-hover-orange">English</a>
+        </div>
       </div>
-      <div class="w3-bar w3-deep-purple">
-        <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-orange"
-          >Home</a
-        >
-        <a href="#portfolio" class="w3-bar-item w3-button w3-mobile w3-hover-orange">Portfolio</a>
-        <a href="#su-di-me" class="w3-bar-item w3-button w3-mobile w3-hover-orange">Su di me</a>
-        <a href="#contattami" class="w3-bar-item w3-button w3-mobile w3-hover-orange">Contattami</a>
-        <div class="w3-dropdown-hover w3-mobile w3-hover-orange">
-          <button class="w3-button w3-hover-orange">
-            <i id="globe" class="fa fa-globe" aria-hidden="true"></i
-              > <i id="globe" class="fa fa-caret-down"></i>
-          </button>
-          <div class="w3-dropdown-content w3-bar-block w3-light-grey">
-            <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-orange">Castellano</a>
-            <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-orange">English</a>
+    </div>
+  </nav>
+  <!-- Header -->
+  <header class="w3-container w3-theme w3-padding" id="myHeader">
+    <div class="background" style="background-image: url('img/background1.jpg');">
+      <div class="w3-display-bottomright w3-container w3-white " style="bottom:25%;opacity:0.7">
+        <h1 class="w3-monospace">Ciao, sono Violetta</h1>
+        <h2 class="w3-monospace">Ti aiuto a costruire il sito giusto per raggiungere i tuoi obiettivi</h2>
+        <a href="#switch-bgc"><button
+            class="w3-btn w3-round w3-orange w3-hover-deep-purple w3-padding-16 w3-margin-bottom"> Scopri di
+            più</button></a>
+      </div>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Switch Background Colour-->
+    <div id="switch-bgc" class="w3-card w3-container w3-white w3-padding-16 w3-round-large" style="width:100%">
+      <div class="w3-container w3-center w3-section">
+        <p class="w3-large">Sapevi che usare la modalità Dark-mode sui tuoi dispositivi allunga la durata della batteria
+          del tuo dispositivo, crea meno scarti e aiuta il pianeta?</p>
+      </div>
+      <button id="dark-mode" class="w3-btn w3-round w3-deep-purple w3-hover-orange w3-padding-16 w3-margin-bottom"
+        onclick="myFunction()">Cambia la modalità</button>
+    </div>
+    <!-- Section My Work: objectives-->
+    <div id="mywork" class="w3-container w3-white w3-center w3-section w3-round-large">
+      <h2>Il mio obiettivo? <br> Aiutarti a raggiungere i tuoi grazie a un sito:</h2>
+      <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-third">
+          <div class="w3-card w3-container w3-section w3-round-xlarge" style="min-height:250px">
+            <i class="fa fa-bolt fa-3x w3-padding-16 w3-text-theme" aria-hidden="true"
+              title="simbolo della velocità"></i>
+            <h4>VELOCE</h4>
+            <p class="w3-large">Un caricamento veloce con qualunque tipo di connessione.</p>
+          </div>
+        </div>
+        <div class="w3-third">
+          <div class="w3-card w3-container w3-section w3-round-xlarge" style="min-height:250px">
+            <i class="fa fa-mobile fa-3x w3-padding-16 w3-text-theme" aria-hidden="true"
+              title="simbolo di vari device"></i>
+            <h4>RESPONSIVE</h4>
+            <p class="w3-large">Siti che ai adattano a schermi di ogni dimensione.</p>
+          </div>
+        </div>
+        <div class="w3-third">
+          <div class="w3-card w3-container w3-section w3-round-xlarge" style="min-height:250px">
+            <i class="fa fa-user-circle fa-3x w3-padding-16 w3-text-theme" aria-hidden="true"
+              title="simbolo di utente"></i>
+            <h4>INTUITIVO</h4>
+            <p class="w3-large">Un design facile e piacevole da usare.</p>
           </div>
         </div>
       </div>
-    </nav> 
-    <header id="home">
-      <div class="header-text-area">
-        <div class="header-text">
-          <h1 class="w3-monospace">Ciao, sono Violetta</h1>
-          <h2 class="w3-monospace">Front End Development Student</h2>
-          <h3 class="w3-monospace">A Start2Impact</h3>
-          <a href="#portfolio"><button class="w3-btn w3-round w3-orange w3-hover-deep-purple"> Scopri di più</button></a>
-        </div>
-        <div class="header-photo w3-hide-small w3-hide-medium">
-          <img
-            src="img/foto-heading.jpg"
-            class="w3-opacity w3-hover-opacity-off"
-            style="width: 100%"
-            alt="foto che ritrae Violetta"
-          />
-        </div>
+      <div class="w3-panel w3-border-left w3-section w3-deep-purple w3-round-xlarge">
+        <h2 id="important">Tutte queste caratteristiche, oltre a rendere il tuo sito piacevole e performante, sono
+          determinanti per avere un buon posizionamento nei
+          <a href="https://www.simpliza.it/blog/fattori-seo-google-lista-completa-ranking/#Velocita_di_caricamento_pagina"
+            aria-label="collegamento a fattori-seo-google-lista-completa-ranking" target="_blank"><em>motori di
+              ricerca!</em> </a>
+        </h2>
       </div>
-    </header>
-    <div class="content">
-    <section id="portfolio" class="w3-container w3-center w3-margin">
-      <div class="background" style="background-image: url('img/backround1.jpg');">
-      <h2>Il mio obiettivo? <br> Aiutarti a raggiungere i tuoi grazie a un sito:</h2>
-      <div class="myweb-icons w3-row-padding w3-margin">
-          <div class="w3-col l4 m3  w3-center w3-padding-24">
-      <i class="fa fa-bolt fa-2x" aria-hidden="true" title="simbolo della velocità"></i>
-      <h4>VELOCE</h4>
-      <p class="w3-large">Un caricamento veloce con qualunque tipo di connessione.</p>
     </div>
-    <div class="w3-col l4 m3  w3-center w3-padding-24">
-      <i class="fa fa-mobile fa-2x" aria-hidden="true" title="simbolo di vari device"></i>
-      <h4>RESPONSIVE</h4>
-      <p class="w3-large">Siti che ai adattano a schermi di ogni dimensione</p>
-    </div>
-    <div class="w3-col l4 m3  w3-center w3-padding-24">
-      <i class="fa fa-user-circle fa-2x" aria-hidden="true" title="simbolo di user"></i>
-      <h4>USABILE</h4>
-      <p class="w3-large">Un design semplice e piacevole da usare.</p>
-    </div>
-    <h2>Tutte queste pratiche aiutano a migliorare i tuoi risultati nei 
-      <a href="https://www.simpliza.it/blog/fattori-seo-google-lista-completa-ranking/#Velocita_di_caricamento_pagina"  aria-label="collegamento a fattori-seo-google-lista-completa-ranking"
-      target="_blank"><em>motori di ricerca!</em> </a> </h2>
-    </div> <!-- fine immagine background-->
-    <h2>La mia aspirazione?<br> Contribuire a costruire un web</h2>
-    <div class="w3-col l4 m3 w3-center w3-padding-24">
-      <i class="fa fa-leaf fa-2x" aria-hidden="true" title="simbolo dell'ecologia"></i>
-      <h4>ECOLOGICO</h4>
-      <p class="w3-large">Una coscienza ecologica anche nelle scelte del mondo digitale.</p>
-    </div>
-    <div class="w3-col l4 m3  w3-center w3-padding-24">
-      <i class="fa fa-lock fa-2x" aria-hidden="true" title="simbolo di un lucchetto"></i>
-      <h4>SICURO</h4>
-      <p class="w3-large">Privacy e controllo sull'uso dei dati personali.</p>
-    </div>
-    <div class="w3-col l4 m3  w3-center w3-padding-24">
-      <i class="fa fa-universal-access fa-2x" aria-hidden="true" title="simbolo dell'essere umano"></i>
-      <h4>ACCESSIBILE</h4>
-      <p class="w3-large">Una tecnologia che aiuta a superare le barriere, fisiche e sociali.</p>
-    </div>
-    <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
-    <h2>Per questo ho sottoscritto il
-      <a href="https://contractfortheweb.org/"  aria-label="collegamento al sito di contract for the web"
-      target="_blank"><em>piano globale per il web.</em> </a> </h2>
-    </div>
-<section id="gallery" class="w3-container w3-center w3-margin">
-  <h1>I miei lavori</h1>
-
-</section>
-
-
-
-
-      <div class="socials">
-        <a
-          href="https://github.com/"
-          aria-label="vai al profilo su GitHub"
-          target="_blank"
-          ><i class="fab fa-github-square fa-2x" aria-hidden="true"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/violetta-ravotto-2271ab125/"
-          aria-label="vai al profilo su Linkedin"
-          target="_blank"
-          ><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i
-        ></a>
-        <a
-          href="https://www.youtube.com/channel/UCN2ljNfSrNn44Z_sMK54fXg"
-          aria-label="vai al canale Youtube"
-          target="_blank"
-          ><i class="fab fa-youtube-square fa-2x" aria-hidden="true"></i
-        ></a>
-      </div>
-    </section>
-    <section id="Portfolio"></section> 
-    <section></section>
-    <section></section>
-    <footer></footer>
   </div>
-    <script>
-      // Light Mode
-      function myFunction() {
-        var element = document.body;
-        element.classList.toggle("light-mode");
-      }
-    </script>
-  </body>
+  <!-- Section My Work: aspiration-->
+  <section class="background" style="background-image: url('img/background2.jpg');">
+    <div class="w3-container w3-center w3-section w3-text-white w3-margin-top">
+      <h2>La mia aspirazione?<br> Contribuire a costruire un web</h2>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+      <div class="w3-third">
+        <div class="w3-card w3-container w3-section w3-white w3-round-xlarge" style="min-height:250px">
+          <i id="icons-asp" class="fa fa-leaf fa-3x w3-padding-16 w3-text-theme" aria-hidden="true"
+            title="simbolo di una foglia"></i>
+          <h4 class="w3-xlarge">ECOLOGICO</h4>
+          <p class="w3-xlarge">Una coscienza ecologica anche nelle scelte del mondo digitale.</p>
+        </div>
+      </div>
+      <div class="w3-third">
+        <div class="w3-card w3-container w3-section w3-white w3-round-xlarge" style="min-height:250px">
+          <i id="icons-asp" class="fa fa-lock fa-3x w3-padding-16 w3-text-theme" aria-hidden="true"
+            title="simbolo di un lucchetto"></i>
+          <h4 class="w3-xlarge">SICURO</h4>
+          <p class="w3-xlarge">Privacy e controllo sull'uso dei dati personali.</p>
+        </div>
+      </div>
+      <div class="w3-third">
+        <div class="w3-card w3-container w3-section w3-white w3-round-xlarge" style="min-height:250px">
+          <i id="icons-asp" class="fa fa-universal-access fa-3x w3-padding-16 w3-text-theme" aria-hidden="true"
+            title="simbolo essere umano"></i>
+          <h4 class="w3-xlarge">ACCESSIBILE</h4>
+          <p class="w3-xlarge">Una tecnologia che aiuta a superare le barriere, fisiche e sociali.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-container w3-center w3-section">
+      <i class="fa fa-plus-circle fa-3x w3-margin-bottom w3-text-theme" aria-hidden="true"></i>
+      <h2 class="w3-xlarge w3-text-white">Per questo ho sottoscritto il
+        <a href="https://contractfortheweb.org/" aria-label="collegamento al sito di contract for the web"
+          target="_blank"><em>piano globale per il web.</em> </a>
+      </h2>
+    </div>
+    </div>
+  </section>
+  <!-- Section My Work: portfolio-->
+  <div class="content">
+    <div class="w3-container w3-center w3-margin-top">
+      <h2>I miei lavori</h2>
+      <p class="w3-large w3-margin-bottom">Ci sono molti tipi di siti web, guarda il mio portfolio e lasciati ispirare!
+      </p>
+    </div>
+    <div class="w3-row-padding">
+      <div class="slider">
+        <div class="card">
+          <div class="img"> <img src="img/landing.jpg"
+              alt="nella foto si vede un aereo che sta atterrando, in riferimento al significato di Landing Page, ovvero pagina di atterraggio">
+          </div>
+          <div class="content">
+            <div class="title">LANDING PAGE</div>
+            <p>Il punto di arrivo della tua campagna pubblicitaria. <br> Ideale anche per testare nuove idee.</p>
+            <a href=""><button class="w3-btn w3-round w3-deep-purple w3-hover-orange w3-margin w3-disabled">
+                Esempio</button></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img"> <img src="img/sito.jpg"
+              alt="foto di un computer portatile sul cui schermo c'è la seguente scritta: disegno e sviluppo esperienze che rendono la vita delle persone più semplice">
+          </div>
+          <div class="content">
+            <div class="title">SITO <br> VETRINA</div>
+            <p><em>Il 63% degli acquisti ha inizio on-line.<br> Thinkwithgoogle, 2018</em><br> Il sito vetrina è il tuo
+              biglietto da visita digitale.</p>
+            <a href=""><button class="w3-btn w3-round w3-deep-purple w3-hover-orange w3-margin w3-disabled">
+                Esempio</button></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img"> <img src="img/yoga.jpg"
+              alt="foto in controluce di una ragazza seduta per terra nella posizione di meditazione: gambe incrociate, gomiti appoggiati alle ginocchia, mani aperte con dito indice e pollice che si uniscono a formare un cerchio">
+          </div>
+          <div class="content">
+            <div class="title">IL TUO <br>BLOG </div>
+            <p>Il blog ha il potenziale per aprire moltissime porte. Condividi le tue passioni!</p>
+            <a href=""><button class="w3-btn w3-round w3-deep-purple w3-hover-orange w3-margin w3-disabled">
+                Esempio</button></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img"> <img src="img/portfolio.jpg"
+              alt="la foto ritrae una ragazza sorridente che guarda in camera con in mano due macchine fotografiche. Quella nella mano destra è sollevata davanti al viso e ne copre la metà: sta facendo una foto nello stesso momento in cui la fotografano">
+          </div>
+          <div class="content">
+            <div class="title">PORTFOLIO PROFESSIONALE</div>
+            <p>Perfetto per artisti e creativi. Mostra tutto il tuo talento e le tue capacità!</p>
+            <a href=""><button class="w3-btn w3-round w3-deep-purple w3-hover-orange w3-margin w3-disabled">
+                Esempio</button></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img"> <img src="img/wedding.jpg"
+              alt="nella foto vediamo il busto e la parte inferiore del viso felice di una donna vestita da sposa. In primo piano la mano con la fede al dito">
+          </div>
+          <div class="content">
+            <div class="title">SITO PERSONALE</div>
+            <p>Vuoi fare un regalo originale o condividere un momento speciale?</p>
+            <a href=""><button class="w3-btn w3-round w3-deep-purple w3-hover-orange w3-margin w3-disabled">
+                Esempio</button></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img"> <img src="img/smartphone.jpg"
+              alt="foto di uno smartphone, un esempio di nuove tecnologie, il cui schermo mostra la pagina di ricerca di Google">
+          </div>
+          <div class="content">
+            <div class="title">AMPLIAMENTO O RESTYLING</div>
+            <p> Hai un sito ma va aggiornato, vuoi aggiungere nuove sezioni oppure modernizzarne lo stile?</p>
+            <div class="btn">
+              <a href=""><button class="w3-btn w3-round w3-deep-purple w3-hover-orange w3-margin w3-disabled">
+                  Esempio</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Socials -->
+      <div id="socials" class="socials w3-margin">
+        <a class="w3-disabled" href="https://github.com/ViolettaRavotto" aria-label="vai al profilo su GitHub"
+          target="_blank"><i class="fab fa-github-square fa-3x" aria-hidden="true"></i></a>
+        <a class="w3-disabled" href="https://www.linkedin.com/in/violetta-ravotto-2271ab125/"
+          aria-label="vai al profilo su Linkedin" target="_blank"><i class="fab fa-linkedin fa-3x"
+            aria-hidden="true"></i></a>
+        <a class="w3-disabled" href="https://www.youtube.com/channel/UCN2ljNfSrNn44Z_sMK54fXg"
+          aria-label="vai al canale Youtube" target="_blank"><i class="fab fa-youtube-square fa-3x"
+            aria-hidden="true"></i></a>
+      </div>
+      <!-- Su di me -->
+      <section>
+        <div id="about" class="w3-card w3-center w3-container w3-margin w3-white w3-round-large" style="width:100%">
+          <h2>Chi sono</h2>
+          <p class="w3-large">Classe 1988, sono laureata in Lettere e Filosofia.<br>
+            Dal 2008 viaggio per piacere e per lavoro: sono stata promoter, guida turistica, responsabile del servizio
+            clienti, marketing manager e insegnanate di circo.<br>
+            Proprio come artista indipendente ho iniziato a interessarmi al web, al design e ai CMS. <br> </p>
+          <p class="w3-xlarge"> Mi sto specializzando come <br> Front End Developer <br>a Start2Impact ed esploro HTML5,
+            CSS3, Javascript, W3C, AMP, UI e Sass.</p>
+        </div>
+        <div class="w3-container w3-padding-32">
+          <p>Spagnolo</p>
+          <div class="w3-grey w3-round">
+            <div class="w3-deep-purple w3-round" style="height:15px;width:99%"></div>
+          </div>
+          <p>Inglese</p>
+          <div class="w3-grey w3-round">
+            <div class="w3-deep-purple w3-round" style="height:15px;width:80%"></div>
+          </div>
+          <p>Francese</p>
+          <div class="w3-grey w3-round">
+            <div class="w3-deep-purple w3-round" style="height:15px;width:80%"></div>
+          </div>
+          <p>Greco moderno</p>
+          <div class="w3-grey w3-round">
+            <div class="w3-deep-purple w3-round" style="height:15px;width:10%"></div>
+          </div>
+        </div>
+        <div id="switch-bgc" class="w3-card w3-container w3-white w3-padding-16 w3-round-large" style="width:100%">
+          <div class="w3-container w3-center w3-section">
+            <p class="w3-large">L'esperienza insegna: sai cosa ho imparato viaggiando durante 13 anni?</p>
+          </div>
+          <a href="">
+            <button class="w3-btn w3-round w3-deep-purple w3-hover-orange w3-padding-16 w3-margin-bottom"
+              style="width: 100%;">Scoprilo guardando questo video</button>
+          </a>
+        </div>
+        <!-- Contact -->
+        <div id="contact" class="w3-container w3-center w3-padding-64">
+          <h2>Contattami</h2>
+          <h3 class="w3-large">Compila il modulo, ti ci vorranno solo pochi minuti</h3>
+          <p>Potrò farmi un'idea di chi sei e di cosa ti serve e ricontattarti a breve con una proposta adatta alle tue
+            esigenze. </p>
+          <br> <br>
+          <form class="w3-container w3-card-4 w3-white w3-round-large" name="formmysite" method="post"
+            action="https://formspree.io/viola.ravotto@hotmail.com">
+            <input type="hidden" name="_subject" value="Message from my site" />
+            <input type="hidden" name="_next" value="" />
+            <!--URL-->
+            <label class="w3-text-deep-purple w3-xlarge">Nome</label>
+            <input class="w3-input w3-border w3-round-large" type="text" placeholder="Scrivi il tuo nome">
+            <br>
+            <select class="w3-select w3-border w3-round-large w3-large" name="option-sono">
+              <option value="" disabled selected>Sono</option>
+              <option value="1">Libero professionista</option>
+              <option value="2">Negozio</option>
+              <option value="3">Impresa</option>
+              <option value="4">Associazione</option>
+              <option value="5">Startup</option>
+              <option value="6">Privato</option>
+            </select>
+            <br><br>
+            <label class="w3-text-deep-purple w3-xlarge">Preferisco contatti via</label>
+            <label class="RB-box">E-mail
+              <input type="radio" checked="checked" name="contatto">
+              <span class="checkmark"></span>
+            </label>
+            <label class="RB-box">Telefono
+              <input type="radio" name="contatto">
+              <span class="checkmark"></span>
+            </label>
+            <br>
+            <input class="w3-input w3-border  w3-round-large" type="text"
+              placeholder="Scrivi qui la tua e-mail o il tuo numero di telefono">
+            <br>
+            <label class="RB-box">Non ho un sito web
+              <input type="radio" checked="checked" name="sito">
+              <span class="checkmark"></span>
+            </label>
+            <label class="RB-box">Ho un sito web ma lo voglio ampliare
+              <input type="radio" name="sito">
+              <span class="checkmark"></span>
+            </label>
+            <label class="RB-box">Ho un sito web ma devo modificarlo
+              <input type="radio" name="sito">
+              <span class="checkmark"></span>
+            </label>
+            <input class="w3-input w3-border  w3-round-large" type="text"
+              placeholder="Copia qui l'indirizzo URL del tuo sito">
+            <br>
+            <p class="w3-text-deep-purple w3-xlarge">Mi serve </p>
+            <label class="CB-box ">Landing Page
+              <input type="checkbox">
+              <span class="checkmark2"></span>
+            </label>
+            <label class="CB-box ">Sito vetrina
+              <input type="checkbox">
+              <span class="checkmark2"></span>
+            </label>
+            <label class="CB-box ">Blog
+              <input type="checkbox">
+              <span class="checkmark2"></span>
+            </label>
+            <label class="CB-box ">Portfolio
+              <input type="checkbox">
+              <span class="checkmark2"></span>
+            </label>
+            <label class="CB-box ">Sito personale
+              <input type="checkbox">
+              <span class="checkmark2"></span>
+            </label>
+            <label class="CB-box ">Modificare/ampliare un sito
+              <input type="checkbox">
+              <span class="checkmark2"></span>
+            </label>
+            <label class="CB-box ">Non so ancora
+              <input type="checkbox">
+              <span class="checkmark2"></span>
+            </label>
+            <br>
+            <label class="w3-text-deep-purple w3-xlarge">Budget</label>
+            <input class="w3-input w3-border  w3-round-large" type="text">
+            <br>
+            <select class="w3-select w3-border w3-round-large" name="option-tempo">
+              <option value="" disabled selected>Mi serve entro</option>
+              <option value="7">Due settimane</option>
+              <option value="8">Un mese</option>
+              <option value="9">Due mesi</option>
+              <option value="10">Tre mesi</option>
+              <option value="11">Sei mesi</option>
+              <option value="12">Non so ancora</option>
+            </select>
+            <br><br>
+            <label class="w3-text-deep-purple w3-xlarge">Vuoi dirmi ancora qualcosa?</label>
+            <input class="w3-input w3-border  w3-round-large" type="text" placeholder="Scrivila qui ">
+            <br><br>
+            <button class="w3-btn w3-round w3-deep-purple w3-hover-orange w3-margin-bottom"
+              style="width: 80px">Invia</button>
+
+          </form>
+        </div>
+      </section>
+    </div>
+  </div> <!-- End content-->
+  <!-- Footer -->
+  <footer id="footer" class="w3-center w3-padding-64">
+    <div>
+      <a href="#"><button class="w3-btn w3-round w3-deep-purple w3-hover-orange"> Torna su <i
+            class="fa fa-arrow-up w3-margin-left w3-text-white"></i></button></a>
+    </div>
+    <div>
+      <p class="w3-center  w3-padding-32">Develop and design by Violetta Ravotto</p>
+    </div>
+    <div id="socials" class="socials">
+      <a class="w3-disabled" href="https://github.com/ViolettaRavotto" aria-label="vai al profilo su GitHub"
+        target="_blank"><i class="fab fa-github-square fa-3x" aria-hidden="true"></i></a>
+      <a class="w3-disabled" href="https://www.linkedin.com/in/violetta-ravotto-2271ab125/"
+        aria-label="vai al profilo su Linkedin" target="_blank"><i class="fab fa-linkedin fa-3x"
+          aria-hidden="true"></i></a>
+      <a class="w3-disabled" href="https://www.youtube.com/channel/UCN2ljNfSrNn44Z_sMK54fXg"
+        aria-label="vai al canale Youtube" target="_blank"><i class="fab fa-youtube-square fa-3x"
+          aria-hidden="true"></i></a>
+    </div>
+  </footer>
+  <script>
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+
 </html>
