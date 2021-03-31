@@ -1,2 +1,1 @@
-# sito-personale
-Prima parte sito personale
+Sito Personale di Violetta Ravotto-Progetto della Superguida HTML e CSS
